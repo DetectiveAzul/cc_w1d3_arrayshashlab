@@ -20,13 +20,18 @@ number_of_stops = stops.length
 
 ###Answer:
 ## By Index
-# falkirk_index = stop.index("Falkirk High"))
-# return stops[falkirk_index]
-## With a method that loop and return the item, more or less like this:
-# stops.each do |i|
-# if i == "Falkirk High"
-# return i
-# end
+def get_falkirk(stops)
+  falkirk_index = stops.index("Falkirk High")
+  return stops[falkirk_index]
+end
+## With a method that loop and return the item:
+def get_falkirk_by_name(stops)
+  stops.each do |i|
+      if i == "Falkirk High"
+        return i
+      end
+  end
+end
 
 # 9. Reverse the positions of the stops in the array
 stops.reverse!
