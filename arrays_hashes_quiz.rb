@@ -89,7 +89,7 @@ erik_fave_numbers.push(7)
 # 7. Change Erik's hometown to Edinburgh
 users["Erik"][:home_town] = "Edinburgh"
 # 8. Add a pet dog to Erik called "Fluffy"
-users["Erik"][:pet] = {"Fluffy" => :dog}
+users["Erik"][:pet]["Fluffy"] = :dog
 # 9. Add yourself to the users hash
 users["Jaime"] = {
   :twitter => "detectiveazul",
